@@ -19,6 +19,8 @@
 		9452398B2C4D935400CB2BD6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452398A2C4D935400CB2BD6 /* MainTabView.swift */; };
 		945239932C4D95B500CB2BD6 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239922C4D95B500CB2BD6 /* ExploreView.swift */; };
 		945239962C4E6CF600CB2BD6 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239952C4E6CF600CB2BD6 /* Notifications.swift */; };
+		945239982C4E6D8300CB2BD6 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239972C4E6D8300CB2BD6 /* MessagesView.swift */; };
+		9452399C2C4E71F200CB2BD6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452399B2C4E71F200CB2BD6 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		9452398A2C4D935400CB2BD6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		945239922C4D95B500CB2BD6 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		945239952C4E6CF600CB2BD6 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		945239972C4E6D8300CB2BD6 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		9452399B2C4E71F200CB2BD6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +247,7 @@
 		945239902C4D956D00CB2BD6 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				945239972C4E6D8300CB2BD6 /* MessagesView.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -250,8 +255,25 @@
 		945239912C4D958200CB2BD6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				9452399A2C4E71CF00CB2BD6 /* ViewModel */,
+				945239992C4E71C700CB2BD6 /* Views */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		945239992C4E71C700CB2BD6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9452399B2C4E71F200CB2BD6 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9452399A2C4E71CF00CB2BD6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +406,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945239982C4E6D8300CB2BD6 /* MessagesView.swift in Sources */,
+				9452399C2C4E71F200CB2BD6 /* ProfileView.swift in Sources */,
 				945239542C4D887200CB2BD6 /* ContentView.swift in Sources */,
 				945239962C4E6CF600CB2BD6 /* Notifications.swift in Sources */,
 				945239872C4D8C4100CB2BD6 /* TweetRowView.swift in Sources */,

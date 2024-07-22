@@ -15,17 +15,7 @@ struct ProfileView: View {
             
             actionButton
            
-            VStack(alignment: .leading, spacing: 4) {
-                
-                
-                HStack {
-                    Text("Heath ledger")
-                        .font(.title).bold()
-                    
-                    Image(systemName: "checkmark.seal.fill")
-                        .foregroundColor(Color(.systemBlue))
-                }
-            }
+            userInfoDetails
             
             Spacer()
         }
@@ -88,6 +78,76 @@ extension ProfileView {
         
         }
         .padding(.trailing)
+    }
+    
+    var userInfoDetails: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            
+            
+            HStack {
+                Text("Heath ledger")
+                    .font(.title).bold()
+                
+                Image(systemName: "checkmark.seal.fill")
+                    .foregroundColor(Color(.systemBlue))
+            }
+            
+            Text("@joker")
+                .font(.subheadline)
+                .foregroundColor(.gray)
+            
+            Text("Your mom favourite villian")
+                .font(.subheadline)
+                .padding(.vertical)
+            
+            HStack (spacing: 24){
+                HStack {
+                    Image(systemName: "mappin.and.ellipse")
+                    
+                    Text("Gotham, NY")
+                }
+                
+               
+                
+                HStack {
+                    Image(systemName: "link")
+                    
+                    Text("www.thejoker.com")
+                }
+            }
+            .font(.caption)
+            .foregroundColor(.gray)
+            
+            HStack (spacing: 24){
+                HStack(spacing: 4) {
+                    Text("807").bold()
+                        .font(.subheadline)
+                        .bold()
+                    
+                    Text("Following")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    
+                  
+                }
+                
+                HStack(spacing: 4) {
+                    Text("6.M").bold()
+                        .font(.subheadline)
+                        .bold()
+                    
+                    Text("Followers")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    
+                    
+                }
+            }
+            .padding(.vertical)
+           
+            
+        }
+        .padding(.horizontal)
     }
     
 }

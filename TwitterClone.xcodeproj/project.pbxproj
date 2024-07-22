@@ -18,6 +18,7 @@
 		945239872C4D8C4100CB2BD6 /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239862C4D8C4100CB2BD6 /* TweetRowView.swift */; };
 		9452398B2C4D935400CB2BD6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452398A2C4D935400CB2BD6 /* MainTabView.swift */; };
 		945239932C4D95B500CB2BD6 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239922C4D95B500CB2BD6 /* ExploreView.swift */; };
+		945239962C4E6CF600CB2BD6 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239952C4E6CF600CB2BD6 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		945239862C4D8C4100CB2BD6 /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
 		9452398A2C4D935400CB2BD6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		945239922C4D95B500CB2BD6 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		945239952C4E6CF600CB2BD6 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 		9452398C2C4D94FD00CB2BD6 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				945239952C4E6CF600CB2BD6 /* Notifications.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				945239542C4D887200CB2BD6 /* ContentView.swift in Sources */,
+				945239962C4E6CF600CB2BD6 /* Notifications.swift in Sources */,
 				945239872C4D8C4100CB2BD6 /* TweetRowView.swift in Sources */,
 				945239842C4D8B1C00CB2BD6 /* FeedView.swift in Sources */,
 				945239522C4D887200CB2BD6 /* TwitterCloneApp.swift in Sources */,

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    @State private var selectedFilter: TweetFilterViewModel = .tweets
+    
     var body: some View {
         VStack (alignment: .leading) {
             
@@ -17,7 +20,21 @@ struct ProfileView: View {
            
             userInfoDetails
             
-            
+            HStack{
+                ForEach(TweetFilterViewModel.allCases, id: \.rawValue) { item in
+                    VStack {
+                        Text(item.title)
+                            .font(.subheadline)
+                            .fontWeight(selectedFilter == item ? .semibold: .regular)
+                            .foregroundColor(selectedFilter == item ? .black : .gray)
+                    }
+                    .onTapGesture {
+                        withAnimation(.easeInOut){
+                            self.selectedFilter = item
+                        }
+                    }
+                }
+            }
             
             Spacer()
         }

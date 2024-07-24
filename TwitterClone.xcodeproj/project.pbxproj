@@ -22,6 +22,7 @@
 		945239982C4E6D8300CB2BD6 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239972C4E6D8300CB2BD6 /* MessagesView.swift */; };
 		9452399C2C4E71F200CB2BD6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452399B2C4E71F200CB2BD6 /* ProfileView.swift */; };
 		945239A42C5145F300CB2BD6 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239A32C5145F300CB2BD6 /* TweetFilterViewModel.swift */; };
+		945239A92C514EB200CB2BD6 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239A82C514EB200CB2BD6 /* UserRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		945239972C4E6D8300CB2BD6 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		9452399B2C4E71F200CB2BD6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		945239A32C5145F300CB2BD6 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
+		945239A82C514EB200CB2BD6 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 		945239802C4D8A5E00CB2BD6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				945239A72C514E9500CB2BD6 /* Users */,
 				945239852C4D8BEF00CB2BD6 /* Tweets */,
 			);
 			path = Components;
@@ -241,7 +244,8 @@
 		9452398D2C4D950000CB2BD6 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				945239922C4D95B500CB2BD6 /* ExploreView.swift */,
+				945239A62C514E5700CB2BD6 /* ViewModel */,
+				945239A52C514E2300CB2BD6 /* Views */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -277,6 +281,29 @@
 				945239A32C5145F300CB2BD6 /* TweetFilterViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		945239A52C514E2300CB2BD6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				945239922C4D95B500CB2BD6 /* ExploreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		945239A62C514E5700CB2BD6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		945239A72C514E9500CB2BD6 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				945239A82C514EB200CB2BD6 /* UserRowView.swift */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +444,7 @@
 				945239872C4D8C4100CB2BD6 /* TweetRowView.swift in Sources */,
 				945239842C4D8B1C00CB2BD6 /* FeedView.swift in Sources */,
 				945239522C4D887200CB2BD6 /* TwitterCloneApp.swift in Sources */,
+				945239A92C514EB200CB2BD6 /* UserRowView.swift in Sources */,
 				945239932C4D95B500CB2BD6 /* ExploreView.swift in Sources */,
 				9452398B2C4D935400CB2BD6 /* MainTabView.swift in Sources */,
 			);

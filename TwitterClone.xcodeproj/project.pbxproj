@@ -25,6 +25,7 @@
 		945239A92C514EB200CB2BD6 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239A82C514EB200CB2BD6 /* UserRowView.swift */; };
 		945239AE2C51530800CB2BD6 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239AD2C51530800CB2BD6 /* SideMenuView.swift */; };
 		945239B02C51531900CB2BD6 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239AF2C51531900CB2BD6 /* SideMenuRowView.swift */; };
+		945239B22C51536C00CB2BD6 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239B12C51536C00CB2BD6 /* SideMenuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		945239A82C514EB200CB2BD6 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		945239AD2C51530800CB2BD6 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		945239AF2C51531900CB2BD6 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
+		945239B12C51536C00CB2BD6 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +334,7 @@
 		945239AC2C5152F100CB2BD6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				945239B12C51536C00CB2BD6 /* SideMenuViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				945239AE2C51530800CB2BD6 /* SideMenuView.swift in Sources */,
 				945239842C4D8B1C00CB2BD6 /* FeedView.swift in Sources */,
 				945239522C4D887200CB2BD6 /* TwitterCloneApp.swift in Sources */,
+				945239B22C51536C00CB2BD6 /* SideMenuViewModel.swift in Sources */,
 				945239A92C514EB200CB2BD6 /* UserRowView.swift in Sources */,
 				945239932C4D95B500CB2BD6 /* ExploreView.swift in Sources */,
 				9452398B2C4D935400CB2BD6 /* MainTabView.swift in Sources */,

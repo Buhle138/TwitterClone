@@ -15,10 +15,10 @@ struct SideMenuView: View {
                     .frame(width: 48, height: 48)
                 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Bruce wayne")
+                    Text("Buhle Radzilani")
                         .font(.headline)
                     
-                    Text("@Batman")
+                    Text("@Buhle")
                         .font(.caption)
                         .foregroundColor(.gray)
                 }
@@ -28,20 +28,24 @@ struct SideMenuView: View {
             }
             .padding(.leading)
             
-            ForEach(SideMenuViewModel.allCases, id: \.rawValue) { option in
-                HStack(spacing: 16) {
-                    Image(systemName: option.imageName)
-                        .font(.headline)
-                        .foregroundColor(.gray)
-                    
-                    Text(option.title)
-                        .font(.headline)
-                    
-                    Spacer()
+            ForEach(SideMenuViewModel.allCases, id: \.rawValue) { viewModel in
+                if viewModel == .profile {
+                    NavigationLink  {
+                        ProfileView()
+                    } label: {
+                        SideMenuOptionRowView(viewModel: viewModel)
+                    }
+                } else if viewModel == .logout {
+                    Button {
+                        print("Handle logout here")
+                    } label: {
+                        SideMenuOptionRowView(viewModel: viewModel)
+                    }
+
+                }else {
+                    SideMenuOptionRowView(viewModel: viewModel)
                 }
-                .frame(height: 40)
-                .padding(.horizontal)
-                
+               
             }
            
             Spacer()
@@ -55,3 +59,4 @@ struct SideMenuView_Previews: PreviewProvider {
         SideMenuView()
     }
 }
+

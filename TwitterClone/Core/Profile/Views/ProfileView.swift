@@ -94,7 +94,7 @@ extension ProfileView {
             
             
             HStack {
-                Text("Heath ledger")
+                Text("Buhle Radzilani")
                     .font(.title).bold()
                 
                 Image(systemName: "checkmark.seal.fill")

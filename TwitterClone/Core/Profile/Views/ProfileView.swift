@@ -17,6 +17,8 @@ struct ProfileView: View {
            
             userInfoDetails
             
+            
+            
             Spacer()
         }
     }

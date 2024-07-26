@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
+        
         ZStack(alignment: .bottomTrailing) {
             ScrollView {
                 LazyVStack {
@@ -21,8 +22,16 @@ struct FeedView: View {
             Button {
                 print("show new tweet view")
             } label: {
-                
+                Image("tweet")
+                    .resizable()
+                    .renderingMode(.template)
+                    .frame(width: 28, height: 28)
+                    .padding()
             }
+            .background(Color(.systemBlue))
+            .foregroundColor(.white)
+            .clipShape(Circle())
+            .padding() 
 
         }
     }

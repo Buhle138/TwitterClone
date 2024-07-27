@@ -34,7 +34,10 @@ struct FeedView: View {
             .background(Color(.systemBlue))
             .foregroundColor(.white)
             .clipShape(Circle())
-            .padding() 
+            .padding()
+            .fullScreenCover(isPresented: $showNewTweetView) {
+                Text("New Tweet view...")
+            }
 
         }
     }

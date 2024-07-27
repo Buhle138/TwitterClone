@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct TextArea: View {
+    @Binding var text: String
+    let placeholder: String
+    
+    //How to initialize a binding property.
+    init(_ placeholder: String, text: Binding<String> ) {
+        self.placeholder = placeholder
+        self._text = text
+        UITextView().appearance().backgroundColor = .clear //will give text view background color.
+        
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+       
     }
 }
 
-struct TextArea_Previews: PreviewProvider {
-    static var previews: some View {
-        TextArea()
-    }
-}
+

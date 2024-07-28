@@ -33,6 +33,7 @@
 		945239C52C559DC900CB2BD6 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239C42C559DC900CB2BD6 /* RegistrationView.swift */; };
 		945239C72C559F5200CB2BD6 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239C62C559F5200CB2BD6 /* RoundedShape.swift */; };
 		945239C92C56E6B100CB2BD6 /* CustomInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239C82C56E6B100CB2BD6 /* CustomInputFields.swift */; };
+		945239CC2C56E95000CB2BD6 /* AuthenticationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239CB2C56E95000CB2BD6 /* AuthenticationHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		945239C42C559DC900CB2BD6 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		945239C62C559F5200CB2BD6 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		945239C82C56E6B100CB2BD6 /* CustomInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputFields.swift; sourceTree = "<group>"; };
+		945239CB2C56E95000CB2BD6 /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 		945239802C4D8A5E00CB2BD6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				945239CA2C56E93800CB2BD6 /* Authentication */,
 				945239A72C514E9500CB2BD6 /* Users */,
 				945239852C4D8BEF00CB2BD6 /* Tweets */,
 				945239B32C51559F00CB2BD6 /* UserStatsView.swift */,
@@ -408,6 +411,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		945239CA2C56E93800CB2BD6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				945239CB2C56E95000CB2BD6 /* AuthenticationHeaderView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -545,6 +556,7 @@
 				945239A42C5145F300CB2BD6 /* TweetFilterViewModel.swift in Sources */,
 				945239872C4D8C4100CB2BD6 /* TweetRowView.swift in Sources */,
 				945239AE2C51530800CB2BD6 /* SideMenuView.swift in Sources */,
+				945239CC2C56E95000CB2BD6 /* AuthenticationHeaderView.swift in Sources */,
 				945239842C4D8B1C00CB2BD6 /* FeedView.swift in Sources */,
 				945239522C4D887200CB2BD6 /* TwitterCloneApp.swift in Sources */,
 				945239B22C51536C00CB2BD6 /* SideMenuViewModel.swift in Sources */,

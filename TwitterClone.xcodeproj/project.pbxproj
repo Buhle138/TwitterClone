@@ -32,6 +32,7 @@
 		945239C32C559DBE00CB2BD6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239C22C559DBE00CB2BD6 /* LoginView.swift */; };
 		945239C52C559DC900CB2BD6 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239C42C559DC900CB2BD6 /* RegistrationView.swift */; };
 		945239C72C559F5200CB2BD6 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239C62C559F5200CB2BD6 /* RoundedShape.swift */; };
+		945239C92C56E6B100CB2BD6 /* CustomInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239C82C56E6B100CB2BD6 /* CustomInputFields.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		945239C22C559DBE00CB2BD6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		945239C42C559DC900CB2BD6 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		945239C62C559F5200CB2BD6 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		945239C82C56E6B100CB2BD6 /* CustomInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputFields.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 				945239B32C51559F00CB2BD6 /* UserStatsView.swift */,
 				945239BD2C5595D300CB2BD6 /* TextArea.swift */,
 				945239C62C559F5200CB2BD6 /* RoundedShape.swift */,
+				945239C82C56E6B100CB2BD6 /* CustomInputFields.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				945239C52C559DC900CB2BD6 /* RegistrationView.swift in Sources */,
 				945239BC2C55943000CB2BD6 /* NewTweetView.swift in Sources */,
 				945239C72C559F5200CB2BD6 /* RoundedShape.swift in Sources */,
+				945239C92C56E6B100CB2BD6 /* CustomInputFields.swift in Sources */,
 				945239B62C515E6800CB2BD6 /* SideMenuOptionRowView.swift in Sources */,
 				945239932C4D95B500CB2BD6 /* ExploreView.swift in Sources */,
 				9452398B2C4D935400CB2BD6 /* MainTabView.swift in Sources */,

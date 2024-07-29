@@ -40,6 +40,7 @@
 		945239D52C56F29400CB2BD6 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 945239D42C56F29400CB2BD6 /* FirebaseFirestoreSwift */; };
 		945239D72C56F29400CB2BD6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 945239D62C56F29400CB2BD6 /* FirebaseStorage */; };
 		945239D92C56F59300CB2BD6 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239D82C56F59300CB2BD6 /* AuthViewModel.swift */; };
+		945239DB2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239DA2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		945239CB2C56E95000CB2BD6 /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
 		945239CD2C56F14D00CB2BD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		945239D82C56F59300CB2BD6 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		945239DA2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +423,7 @@
 			children = (
 				945239C22C559DBE00CB2BD6 /* LoginView.swift */,
 				945239C42C559DC900CB2BD6 /* RegistrationView.swift */,
+				945239DA2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -581,6 +584,7 @@
 				945239872C4D8C4100CB2BD6 /* TweetRowView.swift in Sources */,
 				945239AE2C51530800CB2BD6 /* SideMenuView.swift in Sources */,
 				945239CC2C56E95000CB2BD6 /* AuthenticationHeaderView.swift in Sources */,
+				945239DB2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift in Sources */,
 				945239842C4D8B1C00CB2BD6 /* FeedView.swift in Sources */,
 				945239522C4D887200CB2BD6 /* TwitterCloneApp.swift in Sources */,
 				945239B22C51536C00CB2BD6 /* SideMenuViewModel.swift in Sources */,

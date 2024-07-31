@@ -16,58 +16,62 @@ struct RegistrationView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        VStack{
-            
-            AuthenticationHeaderView(title1: "Get started", title2: "Create your account")
-            
-            VStack(spacing: 40){
-                CustomInputFields(imageName: "envelope", placeholderText: "Email", text: $email)
+        NavigationStack{
+            VStack{
                 
-                CustomInputFields(imageName: "person", placeholderText: "Username", text: $username)
+                AuthenticationHeaderView(title1: "Get started", title2: "Create your account")
                 
-                CustomInputFields(imageName: "person", placeholderText: "Full name", text: $fullname)
-                
-                CustomInputFields(
-                    imageName: "lock",
-                    placeholderText: "password",
-                    isSecureField: true,
-                    text: $password
-                ) 
-            }
-            .padding(32)
-            
-            Button {
-                viewModel.register(withEmail: email, password: password, fullname: fullname, username: username)
-            } label: {
-                Text("Sign up")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(width: 340, height: 50)
-                    .background(Color(.systemBlue))
-                    .clipShape(Capsule())
-                    .padding()
-            }
-            .shadow(color: .gray.opacity(0.5), radius: 100, x: 0, y: 0)
-            
-            Spacer()
-            
-            Button {
-                presentationMode.wrappedValue.dismiss()
-            } label: {
-                HStack {
-                    Text("Already have an account?")
-                        .font(.footnote)
-                    Text("Sign in")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
+                VStack(spacing: 40){
+                    CustomInputFields(imageName: "envelope", placeholderText: "Email", text: $email)
+                    
+                    CustomInputFields(imageName: "person", placeholderText: "Username", text: $username)
+                    
+                    CustomInputFields(imageName: "person", placeholderText: "Full name", text: $fullname)
+                    
+                    CustomInputFields(
+                        imageName: "lock",
+                        placeholderText: "password",
+                        isSecureField: true,
+                        text: $password
+                    )
                 }
+                .padding(32)
+                
+                Button {
+                    viewModel.register(withEmail: email, password: password, fullname: fullname, username: username)
+                } label: {
+                    Text("Sign up")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(width: 340, height: 50)
+                        .background(Color(.systemBlue))
+                        .clipShape(Capsule())
+                        .padding()
+                }
+                .shadow(color: .gray.opacity(0.5), radius: 100, x: 0, y: 0)
+                
+                Spacer()
+                
+                Button {
+                    presentationMode.wrappedValue.dismiss()
+                } label: {
+                    HStack {
+                        Text("Already have an account?")
+                            .font(.footnote)
+                        Text("Sign in")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                    }
+                }
+                .padding(.bottom, 32)
             }
-            .padding(.bottom, 32)
+            .ignoresSafeArea()
+            .navigationDestination(isPresented: $viewModel.didAuthenticateUser) {
+                ProfilePhotoSelectorView()
+            }
         }
-        .ignoresSafeArea()
     }
 }
-
 struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {
         RegistrationView()

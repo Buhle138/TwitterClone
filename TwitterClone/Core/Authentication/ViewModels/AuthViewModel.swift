@@ -11,6 +11,8 @@ import Firebase
 class AuthViewModel: ObservableObject{
     //If this variable below contains a user or is not nil then we will show that user the main user interface. with their details
     @Published var userSession: FirebaseAuth.User?
+    //This property below is for The navigation to the profilePhotoSelectorView
+    @Published var didAuthenticateUser = false
     
     init() {
         self.userSession = Auth.auth().currentUser
@@ -40,7 +42,7 @@ class AuthViewModel: ObservableObject{
                 return
             }
             guard let user = result?.user else {return}
-            self.userSession = user
+           
             
             print("User registered successfully")
             
@@ -54,8 +56,9 @@ class AuthViewModel: ObservableObject{
             
             Firestore.firestore().collection("users")
                 .document(user.uid).setData(data) { _ in
-                    print("DEBUG:  Did upload user data")
+                    self.didAuthenticateUser = true
                 }
+            
         }
     }
     

@@ -8,26 +8,54 @@
 import SwiftUI
 
 struct ProfilePhotoSelectorView: View {
+    @State private var showImagePicker = false
+    @State private var selectedImage: UIImage?
+    @State private var profileImage: Image?
     var body: some View {
         VStack {
             AuthenticationHeaderView(title1: "Setup your account", title2: "Add a profile photo")
             
             Button {
-                print("Pick image here...")
+                showImagePicker.toggle()
             } label: {
-                Image("addProfile")
-                    .resizable()
-                    .renderingMode(.template)
-                    .foregroundColor(Color(.systemBlue))
-                    .scaledToFill()
-                    .frame(width: 180, height: 180)
-                    .padding(.top, 44)
+                if let profileImage = profileImage {
+                    profileImage
+                        .modifier(ProfileImageModifier())
+                } else {
+                    Image("addProfile")
+                        .renderingMode(.template)
+                        .modifier(ProfileImageModifier())
+                        
+                }
+                    
+            }
+            
+            .sheet(isPresented: $showImagePicker, onDismiss: loadImage) {
+               ImagePicker(selectedImage: $selectedImage)
             }
 
             
             Spacer()
         }
         .ignoresSafeArea()
+    }
+    
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        profileImage = Image(uiImage: selectedImage)
+    }
+    
+}
+
+private struct ProfileImageModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(Color(.systemBlue))
+            .scaledToFill()
+            .frame(width: 180, height: 180)
+            .padding(.top, 44)
+            .clipShape(Circle())
+
     }
 }
 

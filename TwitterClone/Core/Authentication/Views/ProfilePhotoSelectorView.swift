@@ -20,16 +20,25 @@ struct ProfilePhotoSelectorView: View {
             } label: {
                 if let profileImage = profileImage {
                     profileImage
-                        .modifier(ProfileImageModifier())
+                        .resizable()
+                        .foregroundColor(Color(.systemBlue))
+                        .scaledToFill()
+                        .frame(width: 180, height: 180)
+                        .clipShape(Circle())
+
                 } else {
                     Image("addProfile")
+                        .resizable()
                         .renderingMode(.template)
-                        .modifier(ProfileImageModifier())
-                        
+                        .foregroundColor(Color(.systemBlue))
+                        .scaledToFill()
+                        .frame(width: 180, height: 180)
+                        .clipShape(Circle())
+
                 }
                     
             }
-            
+            .padding(.top, 44)
             .sheet(isPresented: $showImagePicker, onDismiss: loadImage) {
                ImagePicker(selectedImage: $selectedImage)
             }
@@ -50,12 +59,7 @@ struct ProfilePhotoSelectorView: View {
 private struct ProfileImageModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .foregroundColor(Color(.systemBlue))
-            .scaledToFill()
-            .frame(width: 180, height: 180)
-            .padding(.top, 44)
-            .clipShape(Circle())
-
+         
     }
 }
 

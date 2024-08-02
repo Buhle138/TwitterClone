@@ -42,6 +42,7 @@
 		945239D92C56F59300CB2BD6 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239D82C56F59300CB2BD6 /* AuthViewModel.swift */; };
 		945239DB2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239DA2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift */; };
 		945FFCB82C5A9A9E00A915D6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCB72C5A9A9E00A915D6 /* ImagePicker.swift */; };
+		945FFCBA2C5D6B1700A915D6 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCB92C5D6B1700A915D6 /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		945239D82C56F59300CB2BD6 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		945239DA2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		945FFCB72C5A9A9E00A915D6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		945FFCB92C5D6B1700A915D6 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 		9452397C2C4D894200CB2BD6 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				945FFCB92C5D6B1700A915D6 /* ImageUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				945FFCB82C5A9A9E00A915D6 /* ImagePicker.swift in Sources */,
 				945239542C4D887200CB2BD6 /* ContentView.swift in Sources */,
 				945239962C4E6CF600CB2BD6 /* Notifications.swift in Sources */,
+				945FFCBA2C5D6B1700A915D6 /* ImageUploader.swift in Sources */,
 				945239A42C5145F300CB2BD6 /* TweetFilterViewModel.swift in Sources */,
 				945239872C4D8C4100CB2BD6 /* TweetRowView.swift in Sources */,
 				945239AE2C51530800CB2BD6 /* SideMenuView.swift in Sources */,

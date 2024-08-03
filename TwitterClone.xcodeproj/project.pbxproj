@@ -43,6 +43,7 @@
 		945239DB2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945239DA2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift */; };
 		945FFCB82C5A9A9E00A915D6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCB72C5A9A9E00A915D6 /* ImagePicker.swift */; };
 		945FFCBA2C5D6B1700A915D6 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCB92C5D6B1700A915D6 /* ImageUploader.swift */; };
+		945FFCBC2C5DB73200A915D6 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCBB2C5DB73200A915D6 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		945239DA2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		945FFCB72C5A9A9E00A915D6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		945FFCB92C5D6B1700A915D6 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		945FFCBB2C5DB73200A915D6 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				945FFCB92C5D6B1700A915D6 /* ImageUploader.swift */,
+				945FFCBB2C5DB73200A915D6 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 			files = (
 				945239982C4E6D8300CB2BD6 /* MessagesView.swift in Sources */,
 				9452399C2C4E71F200CB2BD6 /* ProfileView.swift in Sources */,
+				945FFCBC2C5DB73200A915D6 /* UserService.swift in Sources */,
 				945FFCB82C5A9A9E00A915D6 /* ImagePicker.swift in Sources */,
 				945239542C4D887200CB2BD6 /* ContentView.swift in Sources */,
 				945239962C4E6CF600CB2BD6 /* Notifications.swift in Sources */,

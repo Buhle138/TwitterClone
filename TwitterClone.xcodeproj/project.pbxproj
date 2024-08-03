@@ -44,6 +44,7 @@
 		945FFCB82C5A9A9E00A915D6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCB72C5A9A9E00A915D6 /* ImagePicker.swift */; };
 		945FFCBA2C5D6B1700A915D6 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCB92C5D6B1700A915D6 /* ImageUploader.swift */; };
 		945FFCBC2C5DB73200A915D6 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCBB2C5DB73200A915D6 /* UserService.swift */; };
+		945FFCBE2C5DB99F00A915D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCBD2C5DB99F00A915D6 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		945FFCB72C5A9A9E00A915D6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		945FFCB92C5D6B1700A915D6 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		945FFCBB2C5DB73200A915D6 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		945FFCBD2C5DB99F00A915D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 		9452397D2C4D894500CB2BD6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				945FFCBD2C5DB99F00A915D6 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 				945239C32C559DBE00CB2BD6 /* LoginView.swift in Sources */,
 				945239C52C559DC900CB2BD6 /* RegistrationView.swift in Sources */,
 				945239BC2C55943000CB2BD6 /* NewTweetView.swift in Sources */,
+				945FFCBE2C5DB99F00A915D6 /* User.swift in Sources */,
 				945239C72C559F5200CB2BD6 /* RoundedShape.swift in Sources */,
 				945239D92C56F59300CB2BD6 /* AuthViewModel.swift in Sources */,
 				945239C92C56E6B100CB2BD6 /* CustomInputFields.swift in Sources */,

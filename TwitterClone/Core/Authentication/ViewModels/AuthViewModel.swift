@@ -13,6 +13,7 @@ class AuthViewModel: ObservableObject{
     @Published var userSession: FirebaseAuth.User?
     //This property below is for The navigation to the profilePhotoSelectorView
     @Published var didAuthenticateUser = false
+    @Published var  currentUser: User?
     private var tempUserSession: FirebaseAuth.User?
     
     private let service = UserService()
@@ -91,7 +92,9 @@ class AuthViewModel: ObservableObject{
     func fetchUser() {
         guard let uid = self.userSession?.uid else { return }
         
-        service.fetchUser(withuid: uid)
+        service.fetchUser(withuid: uid) { user in
+            self.currentUser = user
+        }
     }
 }
 

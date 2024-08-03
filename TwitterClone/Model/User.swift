@@ -7,7 +7,7 @@
 
 import FirebaseFirestoreSwift //Decoding the data coming from firebasefirestore
 
-struct User: Identifiable {
+struct User: Identifiable, Decodable {
     @DocumentID var id: String?
     let username: String
     let fullname: String

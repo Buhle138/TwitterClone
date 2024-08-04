@@ -34,6 +34,7 @@ struct ProfileView: View {
             
             Spacer()
         }
+        .navigationBarHidden(true)
     }
 }
 

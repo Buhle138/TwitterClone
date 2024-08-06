@@ -23,7 +23,6 @@ struct TwitterCloneApp: App {
             NavigationView {
               ContentView()
                 
-                  
             }
             .environmentObject(viewModel)
         }

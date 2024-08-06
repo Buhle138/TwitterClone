@@ -20,7 +20,7 @@ struct ExploreView: View {
                             } label: {
                                 UserRowView()
                             }
-
+                            
                         }
                     }
                 }
@@ -30,6 +30,7 @@ struct ExploreView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 }
+
 
 struct ExploreView_Previews: PreviewProvider {
     static var previews: some View {

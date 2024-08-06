@@ -46,6 +46,7 @@
 		945FFCBC2C5DB73200A915D6 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCBB2C5DB73200A915D6 /* UserService.swift */; };
 		945FFCBE2C5DB99F00A915D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCBD2C5DB99F00A915D6 /* User.swift */; };
 		945FFCC12C5E67EC00A915D6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 945FFCC02C5E67EC00A915D6 /* Kingfisher */; };
+		945FFCC32C62AF6E00A915D6 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FFCC22C62AF6E00A915D6 /* ExploreViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		945FFCB92C5D6B1700A915D6 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		945FFCBB2C5DB73200A915D6 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		945FFCBD2C5DB99F00A915D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		945FFCC22C62AF6E00A915D6 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +355,7 @@
 		945239A62C514E5700CB2BD6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				945FFCC22C62AF6E00A915D6 /* ExploreViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				945239AE2C51530800CB2BD6 /* SideMenuView.swift in Sources */,
 				945239CC2C56E95000CB2BD6 /* AuthenticationHeaderView.swift in Sources */,
 				945239DB2C58247000CB2BD6 /* ProfilePhotoSelectorView.swift in Sources */,
+				945FFCC32C62AF6E00A915D6 /* ExploreViewModel.swift in Sources */,
 				945239842C4D8B1C00CB2BD6 /* FeedView.swift in Sources */,
 				945239522C4D887200CB2BD6 /* TwitterCloneApp.swift in Sources */,
 				945239B22C51536C00CB2BD6 /* SideMenuViewModel.swift in Sources */,

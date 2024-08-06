@@ -9,6 +9,8 @@ import Firebase
 import FirebaseFirestoreSwift
 
 struct UserService {
+    
+    //this function below can only fetch one user at a time but can't fetch multiple users
     func fetchUser(withuid uid: String, completion: @escaping(User) -> Void) {
         Firestore.firestore().collection("users")
             .document(uid)
@@ -24,5 +26,15 @@ struct UserService {
               
             }
     }
+    
+    func fetchUsers(completion: @escaping([User]) -> Void) {
+        Firestore.firestore().collection("users").getDocuments { snapshot, _ in
+            guard let documents = snapshot?.documents else { return }
+            
+          
+        }
+    }
+    
+    
 }
 

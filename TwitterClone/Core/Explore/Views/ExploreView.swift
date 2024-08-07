@@ -16,12 +16,12 @@ struct ExploreView: View {
             VStack {
                 ScrollView {
                     LazyVStack {
-                        ForEach(0 ... 25, id: \.self) { _ in
+                        ForEach(viewModel.users) { user in
                             
                             NavigationLink {
-                                //ProfileView()
+                                ProfileView(user: user)
                             } label: {
-                                UserRowView()
+                                UserRowView(user: user)
                             }
                             
                         }
@@ -35,8 +35,3 @@ struct ExploreView: View {
 }
 
 
-struct ExploreView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExploreView()
-    }
-}

@@ -13,7 +13,7 @@ class ExploreViewModel: ObservableObject {
     
     
     init () {
-        
+        fetchUsers()
     }
     
     func fetchUsers() {

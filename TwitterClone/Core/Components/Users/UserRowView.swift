@@ -37,8 +37,3 @@ struct UserRowView: View {
     }
 }
 
-struct UserRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserRowView()
-    }
-}

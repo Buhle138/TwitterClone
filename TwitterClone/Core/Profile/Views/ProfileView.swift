@@ -35,7 +35,7 @@ struct ProfileView: View {
             Spacer()
         }
         .navigationBarHidden(true)
-    }
+    }//fixing bugs
 }
 
 struct ProfileView_Previews: PreviewProvider {
